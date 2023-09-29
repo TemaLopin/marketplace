@@ -1,7 +1,8 @@
+import { redirect } from 'next/navigation'
 import Image from 'next/image'
 
 const Home = () => {
-  return <h1>Home</h1>
+  return redirect('/login')
 }
 
 export default Home
