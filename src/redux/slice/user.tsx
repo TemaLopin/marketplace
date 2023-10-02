@@ -2,13 +2,19 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   user: {
-    name: '',
+    picture: '',
+    firstName: 'Test',
+    lastName: 'Test',
+    email: 'test@test.ts',
+    date: '12.34.5678',
+    createAt: '98.76.5432',
+    role: 'client',
   },
   accesses_token: '',
   refresh_token: '',
 }
 
-const User = createSlice({
+const user = createSlice({
   name: 'user',
   initialState,
   reducers: {
@@ -19,5 +25,5 @@ const User = createSlice({
   },
 })
 
-export const {setUser} = User.actions
-export default User.reducer
+export const { setUser } = user.actions
+export default user.reducer

@@ -28,7 +28,7 @@ const Filter: FC<FilterPropsT> = ({ callback, data }) => {
   }
 
   return (
-    <Container>
+    <Container data-animch='6'>
       <Box>
         <CustomSearchInput value='' handleChange={(data) => {}} />
       </Box>

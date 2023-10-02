@@ -5,7 +5,7 @@ const Container = styled.div``
 
 export const List = ({ data = new Array(10).fill({}) }: any) => {
   return (
-    <Container>
+    <Container data-animch='6'>
       {data?.map((item: any) => (
         <MarketElem />
       ))}
